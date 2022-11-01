@@ -1,0 +1,2 @@
+nome da instancia : Server=localhost;Database=master;Trusted_Connection=True;
+

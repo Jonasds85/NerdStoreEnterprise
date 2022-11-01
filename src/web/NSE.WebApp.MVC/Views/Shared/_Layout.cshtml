@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NerdStore Enterprise</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NSE.WebApp.MVC.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <section class="header-main border-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-4">
+                        <a asp-action="Index" asp-controller="Catalogo" class="brand-wrap">
+                            <img alt="Nerd Store Enterprise" class="logo" src="~/images/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-lg-9 col-sm-7 col-8 order-2 order-lg-3">
+                        <div class="d-flex justify-content-end">
+
+                            <partial name="_LoginPartial" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            &copy; 2022 - NerdStore Enterprise - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

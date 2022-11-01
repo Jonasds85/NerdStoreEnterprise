@@ -1,0 +1,11 @@
+﻿@model int
+
+<div class="p-4">
+    
+    <a asp-controller="carrinho" asp-action="Index" class="btn btn-primary rounded-circle position-relative">
+        Carrinho
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            @Model
+        </span>
+    </a>
+</div>

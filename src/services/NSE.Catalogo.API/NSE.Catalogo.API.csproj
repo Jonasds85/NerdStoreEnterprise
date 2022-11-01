@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>    
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4da2284a-115f-4cef-af24-a192ddead2b7</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.6" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.6" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />	  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\building blocks\NSE.Core\NSE.Core.csproj" />
+    <ProjectReference Include="..\..\building blocks\NSE.WebAPI.Core\NSE.WebAPI.Core.csproj" />
+  </ItemGroup>
+
+</Project>
