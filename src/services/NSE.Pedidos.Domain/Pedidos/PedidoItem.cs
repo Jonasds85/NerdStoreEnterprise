@@ -1,5 +1,5 @@
 ﻿
-using NetDevPack.Domain;
+using NSE.Core.DomainObjects;
 
 namespace NSE.Pedidos.Domain.Pedidos
 {

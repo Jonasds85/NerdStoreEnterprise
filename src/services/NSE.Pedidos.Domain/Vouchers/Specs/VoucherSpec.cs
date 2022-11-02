@@ -1,10 +1,10 @@
 ﻿
-using NetDevPack.Specification;
+
 using System.Linq.Expressions;
 
 namespace NSE.Pedidos.Domain.Vouchers.Specs
 {
-    public class VoucherDataSpecification : Specification<Voucher>
+    public class VoucherDataSpecification : NetDevPack.Specification.Specification<Voucher>
     {
         public override Expression<Func<Voucher, bool>> ToExpression()
         {
@@ -12,7 +12,7 @@ namespace NSE.Pedidos.Domain.Vouchers.Specs
         }
     }
 
-    public class VoucherQuantidadeSpecification : Specification<Voucher>
+    public class VoucherQuantidadeSpecification : NetDevPack.Specification.Specification<Voucher>
     {
         public override Expression<Func<Voucher, bool>> ToExpression()
         {
@@ -20,7 +20,7 @@ namespace NSE.Pedidos.Domain.Vouchers.Specs
         }
     }
 
-    public class VoucherAtivoSpecification : Specification<Voucher>
+    public class VoucherAtivoSpecification : NetDevPack.Specification.Specification<Voucher>
     {
         public override Expression<Func<Voucher, bool>> ToExpression()
         {
